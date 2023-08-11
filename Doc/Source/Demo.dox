@@ -1,0 +1,33 @@
+/** 
+\defgroup IfxLld_Demo Demo
+
+\par IMPORTANT NOTICE
+ Infineon Technologies AG (Infineon) is supplying this file for use
+ exclusively with Infineon's microcontroller products. This file can be freely
+ distributed within development tools that are supporting such microcontroller
+ products.
+ \par DISCLAMER
+ THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
+ OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
+ INFINEON SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
+ OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
+
+
+\par How to use the demo
+
+The demo applications are setup to run in the software framework. In order to compile them,
+create an empty framework project with your favorite microcontroller derivative. Then replace
+the 0_AppSw directory with the one from the demo application and compile.
+
+Flash the binary into the tricore.
+
+Connect the RJ45 connector to a PC or any other working ethernet port. (This is required as RGMII interface the clock is driven by the PHY)
+________________________________________________________________________________
+\par Geth transmit and receive Demo
+
+\ref IfxLld_Demo_GethBasicDemo "Demonstrate how to use the GETH for transmissiona and reception"
+________________________________________________________________________________
+
+
+*/

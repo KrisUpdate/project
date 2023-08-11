@@ -1,0 +1,3 @@
+@SET BINUTILS_PATH=C:\Tools\BifacesWin64\bin
+@SET PATH=%BINUTILS_PATH%;%PATH%
+make all

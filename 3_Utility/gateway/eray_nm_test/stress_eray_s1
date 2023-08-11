@@ -1,0 +1,23 @@
+#!/bin/bash
+transmit_cnt=0
+
+
+#/*---------------------------------------------------------------------*/
+#/* main
+#/*---------------------------------------------------------------------*/
+
+echo "erayconfig s1 r 1 0" | timeout 3 nc -u -q 2 -p 53000 10.42.0.146 53002
+sleep 1
+echo "erayconfig s1 t 2 0" | timeout 3 nc -u -q 2 -p 53000 10.42.0.146 53002
+sleep 1
+echo "setudpip 10 42 0 28" | timeout 3 nc -u -q 2 -p 53000 10.42.0.146 53002
+sleep 1
+./udp_server &
+sleep 3
+
+while true; do
+    transmit_cnt=`expr $transmit_cnt + 1`
+    echo $transmit_cnt
+    ./udp_client_eray_s1 10.42.0.146
+    sleep 10
+done

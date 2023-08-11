@@ -1,0 +1,26 @@
+/** 
+\defgroup IfxLld_Demo_GethDemoBasic Geth Basic demo
+\ingroup IfxLld_Demo
+
+
+\par Introduction
+This application demo sends 64 bytes of data and receives it back using an Geth phy loopback.
+This demo uses all the channels available in Geth and 
+This application works on a triboard containing GETH with support of RGMII interface to RTL8211FG Geth PHY.
+RTL8211FG is configured in the Loopback mode.
+
+It features the following:
+- Configuration of Geth module
+- Configuration of Geth PHY 
+- Initialisation and configuration of MTL, MAC and DMA layers of Geth
+- Trigger transmission of 64byte data from Geth
+- Reception of transmitted data.
+- Verify the data transfers by comparing source and destination buffers
+
+\par Hardware used
+Uses Geth
+
+\par Tested on
+This demo application has been tested on the TC39xB device using a triboard.
+
+*/
